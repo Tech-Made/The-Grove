@@ -5,6 +5,11 @@ const User = require('../models/user');
 const Project = require('../models/project');
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
+router.get('/join'), (req, res) => {
+    console.log('hereeee')
+    return res.status(200)
+}
+
 router.get('/projects', async (req, res) => {
     const project = await new Project(req.body);
     project.save();
@@ -28,5 +33,11 @@ router.post('/contact', async (req,res) => {
     return res.status(200).send('Email Sent');
 });
 
+router.post('/join', async (req,  res) => {
+    const user = new User(req.body);
+    await user.save();
+    res.status(200);
+    res.end();
+});
 
 module.exports = router;

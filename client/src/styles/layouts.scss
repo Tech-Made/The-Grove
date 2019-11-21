@@ -22,7 +22,7 @@
         font-size: 1.6em;
         letter-spacing: 2px;
         font-family: $textfont;
-        color: $dark;
+        color: $text;
     }
     .down-arrow {
         // position: absolute;
@@ -31,10 +31,10 @@
         // bottom: 8%;
         font-size: 3.2em;
         transition: .3s;
-        color: $bg;
-        &:hover {
-            color: $primary;
-        }
+        // color: $bg;
+        // &:hover {
+        //     // color: $primary;
+        // }
     }
 }
 
