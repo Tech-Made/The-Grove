@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 assert = require("assert");
 
 // these a heroku env var
-const url = process.env.MONGODB_URI || "mongodb://localhost/techmade-db";
+const url = process.env.MONGODB_URI || "mongodb://localhost/thegrove-db";
 mongoose.Promise = global.Promise;
 
 mongoose.connect(

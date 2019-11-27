@@ -6,6 +6,8 @@ import { faInstagram } from "@fortawesome/free-brands-svg-icons"
 import Top from '../components/Home/Top';
 import Mid from '../components/Home/Mid';
 import Community from '../components/Home/Community';
+import Compare from '../components/Home/Compare';
+import Store from '../components/Home/Store';
 
 const Home = () => {
 
@@ -15,6 +17,8 @@ const Home = () => {
       <Top/>
       <Mid/>
       <Community/>
+      {/* <Compare/> */}
+      <Store/>
     </div>
   );
 }

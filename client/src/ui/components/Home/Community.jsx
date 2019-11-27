@@ -7,7 +7,7 @@ const Community = () => {
             <p className='title'>COMMUNITY FIRST BUSINESS</p>
             <img className='community-bg' src={community} alt='Community'/>
             <div className="about">
-                <p className='about-description'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum nobis recusandae corporis tenetur deserunt, debitis veniam impedit a! Ratione dignissimos error dicta amet voluptatum, veritatis laborum? Et quaerat dolor ex.</p>
+                <p className='about-description'>The Grove is a recreational cannabis company rooted in the belief that community-first business is possible. We are committed to “dispensing equity” by providing critical resources to the community we serve. The Grove firmly believes that its work and commitment to community will help rewrite the narrative on recreational cannabis.</p>
             </div>
         </div>
     )

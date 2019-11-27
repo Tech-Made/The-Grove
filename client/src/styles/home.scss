@@ -55,13 +55,13 @@
   }
 
   .mid-section {
-    margin-top: 2em;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    justify-content: space-evenly;
-    padding-left: 10vw;
-    padding-right: 10vw;
+      margin-top: 2em;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      justify-content: space-evenly;
+      padding-left: 10vw;
+      padding-right: 10vw;
     .giveback{
       max-width: 34vw;
     }
@@ -76,8 +76,11 @@
         left: 10%;
         top: 77.4%;
         z-index: 1000;
-     }
-   }
+      }
+    }
+    // .flierbg {
+    //   background-image: url(../assets/images/fullflier.png);
+    // }
   }
 
   .community-section {
@@ -110,6 +113,81 @@
       letter-spacing: 1px;
     }
   }
+
+  .compare-section {
+    display: flex;
+    // justify-content: space-around;
+    .title {
+      font-family: $titlefont;
+      color: $secondary;
+      text-align: center;
+      font-size: 2.8em;
+      margin-bottom: .5em;
+    }
+    .sativa {
+       padding-top: 11em;
+      width: 50vw;
+      background-color: #000000;
+    }
+    .indica {
+      padding-top: 11em;
+      width: 50vw;
+      background-color: #808080;
+    }
+  }
+
+  .store-section {
+    padding-top: 8em;
+    padding-bottom: 8em;
+    position: relative;
+    background-color: $secondary;
+    .title {
+      font-family: $titlefont;
+      color: $primary;
+      text-align: center;
+      font-size: 2.8em;
+      margin-bottom: .5em;
+    }
+    .store {
+      margin: 0 auto;
+      display: block;
+      max-width: 50vw;
+      margin-top: 3em;
+    }
+    .subscribe {
+      margin-top: 3em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .email-input {
+        background-color: transparent;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        border-bottom: 1px solid $primary;
+        color: $primary;
+        padding: .4em 1em;
+        width: auto;
+        font-size: 1.2em;
+        margin-right: 1.6em;
+        
+      }
+      .long-btn {
+        width: 12em;
+        height: 2.4em;
+        border: none;
+        color: $secondary;
+        background-color: $primary;
+        font-size: 1em;
+        letter-spacing: 1px;
+        font-weight: 100;
+        margin-left: 0em;
+        cursor: pointer;
+        transition: .2s;
+      }
+    }
+  }
+
 }
 
 .icon {
@@ -295,7 +373,7 @@
       .about {
         z-index: 1000;
         width: 92vw;
-        height: 22em;
+        height: 21em;
         background: rgba(255, 255, 255, 0.75);
         border-radius: 8px;
         padding: 1.4em 1.6em;
@@ -303,8 +381,33 @@
         .about-description {
           margin-top: 0em;
           margin-bottom: 0em;
+          font-size: 1.2em;
+        }
       }
     }
+
+    .compare-section {
+      display: flex;
+      flex-direction: column;
+      .sativa, .indica {
+        width: 100vw;
+      }
     }
+
+    .store-section {
+      .store {
+        max-width: 90vw;
+      }
+      .subscribe {
+        flex-direction: column;
+        .email-input {
+          margin-right: 0;
+        }
+        .long-btn {
+          margin-top: 1em;
+        }
+      }
+    }
+
   }
 }

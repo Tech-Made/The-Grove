@@ -5,7 +5,7 @@ const path = require('path') // research the path native node module
 const bodyParser = require('body-parser');
 const methodOverride = require('method-override');
 const port = process.env.PORT || 5000
-require('./data/techmade-db');
+require('./data/thegrove-db');
 const cors = require('cors')
 const logger = require('morgan');
 
@@ -16,10 +16,10 @@ app.use(methodOverride('_method'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-// const logic = require('./controllers/index');
+const logic = require('./controllers/index');
 // const contact = require('./controllers/contact');
 // app.use(contact);
-// app.use(logic);
+app.use(logic);
 
 if (process.env.NODE_ENV === 'production') {
     // Exprees will serve up production assets
