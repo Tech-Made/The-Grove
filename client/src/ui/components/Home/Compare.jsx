@@ -1,5 +1,5 @@
 import React from 'react';
-import community from '../../../assets//images/community.png';
+// import community from '../../../assets//images/community.png';
 
 const Compare = () => {
     return (

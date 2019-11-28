@@ -6,7 +6,10 @@ const Mid = () => {
         <div className='mid-section'>
             <img className='giveback' alt='The Grove' src={giveback} />
             <div className="flier-container">
-                <a target='_blank' href='https://chronicconversation.splashthat.com/'>
+                <a 
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    href='https://chronicconversation.splashthat.com/'>
                     <button className="btn-primary rsvp">
                         RSVP
                     </button>

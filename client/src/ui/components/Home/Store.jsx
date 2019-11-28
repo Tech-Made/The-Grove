@@ -7,13 +7,10 @@ const Compare = () => {
     const [email, setEmail] = useState('');
     const [loading, setLoading] = useState('OK');
     
-    const handleSubmit = async () => {
-        console.log('submitting... :', email);
-        
+    const handleSubmit = async () => {        
         setLoading('LOADING');
         try {
-            const _ = await axios.post('http://localhost:5000/join', {email});
-            // const _ = await axios.post('http://localhost:5000/join', {email});
+            await axios.post('http://localhost:5000/join', {email});
             setLoading('SENT');
         } catch(e) {
             setLoading('ERROR');

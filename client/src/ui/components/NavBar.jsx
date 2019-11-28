@@ -1,8 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
 import '../../styles/navbar.scss'
 import logo from '../../assets/logos/logo-white.png';
-import '../../styles/navbar.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 
 const NavBar = () => {
     return (
@@ -17,12 +17,38 @@ const NavBar = () => {
             <div className="nav-wrapper">
                 <ul>
                     <div>
-                        <Link to='home'>
-                            <img className='nav-logo' alt='The Grove' src={logo} />
-                        </Link>
-                        <li><a className="header-text hover" href='/'>Home</a></li>
-                        <li><a className="header-text hover" href='/contact'>Contact</a></li>
-                        <a target='_onblank' href='instagram.com/thegrove'><i className="icon hover fab fa-instagram"></i></a>
+                        <li>
+                            <img
+                                className='nav-logo'
+                                target='_blank'
+                                rel='noopener noreferrer'
+                                alt='The Grove'
+                                src={logo}
+                            />
+                        </li>
+                        <li><a className="header-text hover">Home</a></li>
+                        <li>
+                            <a
+                                className="header-text hover"
+                                target='_blank'
+                                rel='noopener noreferrer'
+                                href='https://chronicconversation.splashthat.com/'
+                            >
+                                RSVP
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                className='igIcon'
+                                rel='noopener noreferrer'
+                                target='_blank'
+                                href='https://instagram.com/thegroveaurora'>
+                                <FontAwesomeIcon
+                                    icon={faInstagram}
+                                    size="2x"
+                                />
+                            </a>
+                        </li>
                     </div>
                 </ul>
             </div>

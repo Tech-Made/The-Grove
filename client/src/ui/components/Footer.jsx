@@ -1,13 +1,22 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import logofullwhite from '../../assets/logos/logofullwhite.png';
 import '../../styles/footer.scss'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 
 const Footer = () => {
     return (
         <footer>
-            <center>
-                <p>Copyrights Techmade. 2019.</p>
-            </center>
+            <img alt='Grove' className='footer-logo' src={logofullwhite}/>
+            <a className='igIcon'
+            target='_blank' 
+            rel='noopener noreferrer'
+            href='https://instagram.com/thegroveaurora'>
+                <FontAwesomeIcon
+                    icon={faInstagram}
+                    size="2x"
+                />
+            </a>
         </footer>
 
     )
