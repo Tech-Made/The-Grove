@@ -10,7 +10,7 @@ const Compare = () => {
     const handleSubmit = async () => {        
         setLoading('LOADING');
         try {
-            await axios.post('http://localhost:5000/join', {email});
+            await axios.post('https://thegroveaurora.com//join', {email});
             setLoading('SENT');
         } catch(e) {
             setLoading('ERROR');

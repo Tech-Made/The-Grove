@@ -11,8 +11,7 @@ const Top = () => {
     const handleSubmit = async () => {        
         setLoading('LOADING');
         try {
-            await axios.post('http://localhost:5000/join', {email});
-            // const _ = await axios.post('http://localhost:5000/join', {email});
+            await axios.post('https://thegroveaurora.com/join', {email});
             setLoading('SENT');
         } catch(e) {
             setLoading('ERROR');
@@ -45,11 +44,8 @@ const Top = () => {
                     {loading === 'LOADING' && 'Loading'}
                     {loading === 'OK' && 'Get Updates'}
                     {loading === 'SENT' && "You're in!"}
+                    {loading === 'ERROR' && "Something went wrong!"}
                 </button>
-                {
-                    loading === 'ERROR' &&
-                    <p>Uh oh! Something went wrong!</p>
-                }
             </div>
             </div>
         </>
