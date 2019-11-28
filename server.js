@@ -17,8 +17,6 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 const logic = require('./controllers/index');
-// const contact = require('./controllers/contact');
-// app.use(contact);
 app.use(logic);
 
 if (process.env.NODE_ENV === 'production') {
@@ -33,7 +31,7 @@ if (process.env.NODE_ENV === 'production') {
   }
 
 app.listen(port, () =>{
-    console.log(`Server is listening on ${port}`);
+    console.log(`Server is listening on ${port} 🍁`);
 });
 
 module.exports = { app }
