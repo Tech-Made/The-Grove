@@ -42,7 +42,7 @@ const NavBar = () => {
                                 className='igIcon'
                                 rel='noopener noreferrer'
                                 target='_blank'
-                                href='https://instagram.com/thegroveaurora'>
+                                href='https://instagram.com/the_groveaurora'>
                                 <FontAwesomeIcon
                                     icon={faInstagram}
                                     size="2x"

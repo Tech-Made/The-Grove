@@ -11,7 +11,7 @@ const Footer = () => {
             <a className='igIcon'
             target='_blank' 
             rel='noopener noreferrer'
-            href='https://instagram.com/thegroveaurora'>
+            href='https://instagram.com/the_groveaurora'>
                 <FontAwesomeIcon
                     icon={faInstagram}
                     size="2x"
